@@ -6,7 +6,7 @@ const title = document.querySelector("title");
 const titrePage = document.querySelector("h1");
 
 if (!typeUser) {
-    location.href = '/index.html'
+    location.href = '/hack3shcool_front-end/index.html'
 }
 
 if (typeUser == "teacher") {

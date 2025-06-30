@@ -12,7 +12,7 @@ console.log(provenance);
 if (coursId) {
     detailCours()
 }else{
-    location.href = "/index.html"
+    location.href = "/hack3shcool_front-end/index.html"
 }
 
 async function detailCours() {
@@ -103,7 +103,7 @@ async function registerCours() {
     }
 
     if (result.status == 200 || result.status == 409) {
-        location.href = "/cours/cours.html" 
+        location.href = "/hack3shcool_front-end/cours/cours.html" 
     }
 
 }

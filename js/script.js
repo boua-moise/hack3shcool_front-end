@@ -42,7 +42,7 @@ async function getUser(token) {
             visiteur.parentElement.removeChild(visiteur);
             student.parentElement.removeChild(student);
             teacher.style.display = "flex";
-            if (location.pathname == "/index.html") {
+            if (location.pathname == "/hack3shcool_front-end/index.html") {
                 link.href = "/";
                 link.style.display = "none";
             }
@@ -57,12 +57,12 @@ async function getUser(token) {
         displayPage();
     }
     else{
-        if (location.pathname != '/index.html' 
-            && location.pathname != '/cours/list_cours.html' 
-            && location.pathname != '/cours/detail.html' 
-            && location.pathname != '/authentication/user.html'
+        if (location.pathname != '/hack3shcool_front-end/index.html' 
+            && location.pathname != '/hack3shcool_front-end/cours/list_cours.html' 
+            && location.pathname != '/hack3shcool_front-end/cours/detail.html' 
+            && location.pathname != '/hack3shcool_front-end/authentication/user.html'
         ) {
-            location.href = '/index.html';
+            location.href = '/hack3shcool_front-end/index.html';
         }else{
             displayPage();
         }
@@ -79,7 +79,7 @@ function displayPage() {
         const userStudent = document.getElementById("user-student");
         const userTeacher = document.getElementById("user-teacher");
 
-        if (location.pathname == "/authentication/user.html") {
+        if (location.pathname == "/hack3shcool_front-end/authentication/user.html") {
             if (typeUser == "teacher") {
                 console.log("ok");
                 

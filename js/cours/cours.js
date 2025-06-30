@@ -57,7 +57,7 @@ async function changeSection() {
             }
         });
         if (resulte.status == 200) {
-            location.href = "/dashboard/student.html"
+            location.href = "/hack3shcool_front-end/dashboard/student.html"
         }
     }
 }

@@ -1,7 +1,7 @@
 const token = sessionStorage.getItem("token")
 
 if (token){
-    location.href = "/index.html";
+    location.href = "/hack3shcool_front-end/index.html";
 }
 
 const forme = document.querySelector("form");
@@ -69,7 +69,7 @@ forme.addEventListener("submit", async (e) => {
     if (result.status != 200) {
         alert(valeur.detail)
     }else{
-        location.href = '/authentication/login.html';
+        location.href = '/hack3shcool_front-end/authentication/login.html';
     }
     
     console.log(valeur);

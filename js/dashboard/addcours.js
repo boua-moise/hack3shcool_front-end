@@ -14,7 +14,7 @@ async function getUser(token) {
         donnee = await result.json()
 
         if (donnee.role != "teacher") {
-          location.href = "/index.html";
+          location.href = "/hack3shcool_front-end/index.html";
       }
     }
 }
@@ -169,7 +169,7 @@ document.getElementById("submit-course-btn").addEventListener("click", async () 
     });
     console.log(resultat);
     if (resultat.status == 200) {
-      location.href = "/dashboard/teacher.html";
+      location.href = "/hack3shcool_front-end/dashboard/teacher.html";
     }
     // 
   }

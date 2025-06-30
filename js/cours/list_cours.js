@@ -60,5 +60,5 @@ document.addEventListener("click", (e) => {
     
     localStorage.setItem("coursId", coursId);
 
-    location.href = "/cours/detail.html";
+    location.href = "/hack3shcool_front-end/cours/detail.html";
 });

@@ -22,14 +22,14 @@ async function getUser(token) {
         image.src = `${data.url_image}`;
         biographie.innerText = `${data.biographie}`
     }else{
-        location.href = "/index.html"
+        location.href = "/hack3shcool_front-end/index.html"
     }
 
 }
 
 function logout() {
     sessionStorage.clear();
-    location.href = "/index.html";
+    location.href = "/hack3shcool_front-end/index.html";
 }
 
 getUser(token)

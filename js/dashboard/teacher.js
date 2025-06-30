@@ -12,7 +12,7 @@ async function dashboardTeacher(token) {
     });
 
     if (result.status == 401) {
-        location.href = "/index.html";
+        location.href = "/hack3shcool_front-end/index.html";
     }
     
     if (result.status == 200) {
