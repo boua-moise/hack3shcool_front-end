@@ -20,7 +20,7 @@ if (typeUser == "teacher") {
 title.textContent += typeUser;
 
 async function users() {
-    const result = await fetch(`http://localhost:8000/auth/all/${typeUser}`, {
+    const result = await fetch(`http://hack3shcool.onrender.com:8000/auth/all/${typeUser}`, {
         method: "GET",
         headers: {
             "content-type": "application/json"
