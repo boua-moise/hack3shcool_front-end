@@ -5,7 +5,7 @@ const encoursElement = document.querySelector("section.encours");
 const terminerElement = document.querySelector("section.terminer");
 
 async function dashboardStudent(token) {
-    const result = await fetch("http://hack3shcool.onrender.com:8000/dashboard/student", {
+    const result = await fetch("https://hack3shcool.onrender.com:8000/dashboard/student", {
         method: "GET",
         headers: {
             "Authorization": `Bearer ${token}`,
@@ -108,7 +108,7 @@ document.addEventListener("click", async (e) => {
     
     if (e.target.classList.contains("delete")) {
         console.log(e.target.id);
-        const result = await fetch(`http://hack3shcool.onrender.com:8000/dashboard/student/cours/${e.target.id}/erase`, {
+        const result = await fetch(`https://hack3shcool.onrender.com:8000/dashboard/student/cours/${e.target.id}/erase`, {
             method: "DELETE",
             headers: {
                 "Authorization": `Bearer ${studentToken}`

@@ -20,7 +20,7 @@ const link = document.getElementById("index");
 let donnee;
 
 async function getUser(token) {
-    const result = await fetch("http://hack3shcool.onrender.com:8000/auth/", {
+    const result = await fetch("https://hack3shcool.onrender.com:8000/auth/", {
     "method":"GET",
     "headers":{
         "content-type": "application/json",

@@ -3,7 +3,7 @@ const teacherToken = sessionStorage.getItem("token");
 const contenu = document.querySelector("section.items");
 
 async function dashboardTeacher(token) {
-    const result = await fetch("http://hack3shcool.onrender.com:8000/dashboard/teacher", {
+    const result = await fetch("https://hack3shcool.onrender.com:8000/dashboard/teacher", {
         method: "GET",
         headers: {
             "Authorization": `Bearer ${token}`,
@@ -58,7 +58,7 @@ document.addEventListener("click", async (e) => {
     
     if (e.target.classList.contains("delete")) {
 
-        const result = await fetch(`http://hack3shcool.onrender.com:8000/dashboard/teacher/cours/${e.target.id}/delete`, {
+        const result = await fetch(`https://hack3shcool.onrender.com:8000/dashboard/teacher/cours/${e.target.id}/delete`, {
             method: "DELETE",
             headers: {
                 "Authorization": `Bearer ${teacherToken}`

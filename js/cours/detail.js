@@ -16,7 +16,7 @@ if (coursId) {
 }
 
 async function detailCours() {
-    result = await fetch(`http://hack3shcool.onrender.com:8000/cours/${coursId}/details`, {
+    result = await fetch(`https://hack3shcool.onrender.com:8000/cours/${coursId}/details`, {
         method: "GET",
         "content-type": "application/json"
     });
@@ -88,7 +88,7 @@ async function detailCours() {
 
 
 async function registerCours() {
-    const result = await fetch(`http://hack3shcool.onrender.com:8000/cours/${coursId}/register`, {
+    const result = await fetch(`https://hack3shcool.onrender.com:8000/cours/${coursId}/register`, {
         method: "POST",
         headers:{
             "content-type": "application/json",
