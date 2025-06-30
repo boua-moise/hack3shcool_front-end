@@ -7,8 +7,11 @@ if (token){
 
 const forme = document.querySelector("form")
 
+displayPage();
+
 forme.addEventListener("submit", async (e) => {
     e.preventDefault();
+    displayPage2();
     const data = new FormData(e.target);
     // console.log(data);
     const payload = Object.fromEntries(data);
@@ -29,3 +32,15 @@ forme.addEventListener("submit", async (e) => {
     }
     
 })
+
+function displayPage() {
+    setTimeout(() => {
+        document.querySelector(".loader").style.display = "none";
+        document.querySelector(".main").style.display = "flex";
+    }, 1000)
+}
+
+function displayPage2() {
+    document.querySelector(".main").style.display = "none";
+    document.querySelector(".loader").style.display = "flex";
+}

@@ -131,7 +131,7 @@ return sections;
 
 document.getElementById("submit-course-btn").addEventListener("click", async () => {
   const sections = await collectSections();
-
+  displayPage2();
   // Exemple : structure du cours à envoyer au backend
   const coursData = {
     titre: document.getElementById("titre").value,  // si tu as un champ pour le titre du cours
@@ -175,3 +175,9 @@ document.getElementById("submit-course-btn").addEventListener("click", async () 
   }
   
 });
+
+
+function displayPage2() {
+    document.querySelector(".main").style.display = "none";
+    document.querySelector(".loader").style.display = "flex";
+}

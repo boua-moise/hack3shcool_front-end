@@ -1,5 +1,5 @@
 div.main{
-    display: flex;
+    display: none;
 }
 
 main{
@@ -8,7 +8,7 @@ main{
     align-items: center;
 }
 
-h1{
+h1.titre{
     padding: 20px 0;
     width: 700px;
 }
