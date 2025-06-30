@@ -7,7 +7,7 @@ const contenueSection = document.querySelector("section.contenue");
 let sections;
 let i = 0;
 async function cours() {
-    result = await fetch(`https://hack3shcool.onrender.com:8000/cours/${id}/view`, {
+    result = await fetch(`https://hack3shcool.onrender.com/cours/${id}/view`, {
         method: "GET",
         headers:{
             "content-type": "application/json",
@@ -49,7 +49,7 @@ async function changeSection() {
         i++;
     }else{
         alert("Félicitation vous venez de finir le cours");
-        const resulte = await fetch(`https://hack3shcool.onrender.com:8000/cours/${id}/update`, {
+        const resulte = await fetch(`https://hack3shcool.onrender.com/cours/${id}/update`, {
             method: "PUT",
             headers:{
                 "content-type": "application/json",

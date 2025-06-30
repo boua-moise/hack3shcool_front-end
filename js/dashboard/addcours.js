@@ -2,7 +2,7 @@ const tokenTeacher = sessionStorage.getItem("token");
 
 
 async function getUser(token) {
-    const result = await fetch("https://hack3shcool.onrender.com:8000/auth/", {
+    const result = await fetch("https://hack3shcool.onrender.com/auth/", {
     "method":"GET",
     "headers":{
         "content-type": "application/json",
@@ -96,7 +96,7 @@ btnAddSection.addEventListener('click', (e) => {
       class: ImageTool,
       config: {
         endpoints: {
-          byFile: 'https://hack3shcool.onrender.com:8000/dashboard/uploadFile', // Your backend file uploader endpoint
+          byFile: 'https://hack3shcool.onrender.com/dashboard/uploadFile', // Your backend file uploader endpoint
           byUrl: 'http://localhost:8008/fetchUrl', // Your endpoint that provides uploading by Url
         }
       }
@@ -144,7 +144,7 @@ document.getElementById("submit-course-btn").addEventListener("click", async () 
   console.log(coursData);
 
   // Envoie vers le backend (FastAPI ou autre)
-  const result = await fetch("https://hack3shcool.onrender.com:8000/dashboard/teacher/addcours", {
+  const result = await fetch("https://hack3shcool.onrender.com/dashboard/teacher/addcours", {
     method: "POST",
     headers: {
       "content-type": "application/json",
@@ -163,7 +163,7 @@ document.getElementById("submit-course-btn").addEventListener("click", async () 
     const fichier = imageCours.files[0];
     cleanForm.append("image", fichier);
     console.log(Object.fromEntries(cleanForm));
-    const resultat = await fetch(`https://hack3shcool.onrender.com:8000/dashboard/image/cours/${response.id}`, {
+    const resultat = await fetch(`https://hack3shcool.onrender.com/dashboard/image/cours/${response.id}`, {
         "method":"POST",
         "body": cleanForm,
     });

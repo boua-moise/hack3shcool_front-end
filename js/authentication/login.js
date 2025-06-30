@@ -13,7 +13,7 @@ forme.addEventListener("submit", async (e) => {
     // console.log(data);
     const payload = Object.fromEntries(data);
     // console.log(payload);
-    const result = await fetch("https://hack3shcool.onrender.com:8000/auth/login", {
+    const result = await fetch("https://hack3shcool.onrender.com/auth/login", {
         "method":"POST",
         "body":JSON.stringify(payload),
         "headers":{

@@ -2,7 +2,7 @@ const allCours = document.querySelector("section.all_cours");
 
 
 async function getAllCours() {
-    const result = await fetch("https://hack3shcool.onrender.com:8000/cours/list", {
+    const result = await fetch("https://hack3shcool.onrender.com/cours/list", {
         method: "GET",
         headers:{
             "content-type": "application/json"
