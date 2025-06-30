@@ -27,7 +27,7 @@ async function detailCours() {
     
 
     main.innerHTML = `
-                <h1>${coursDetail.titre}</h1>
+                <h1 class="titre">${coursDetail.titre}</h1>
 
                 <div class="icon">
                     <span><img src="../image/icon/signal1.png" alt="niveau" class="icon"><em>${coursDetail.niveau}</em></span>
