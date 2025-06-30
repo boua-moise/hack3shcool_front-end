@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack3School - Connexion</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/authentication/login.css">
+    <link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96" />
+</head>
+
+<body>
+    
+    <header>
+        <a href="../index.html"><div class="logo">HACK<em>3</em><br>SCHOOL</div></a>
+    </header>
+
+    <main>
+
+        <h1>Connexion</h1>
+
+        <form action="#" method="post">
+
+            <div class="content-form">
+
+                <div class="champ-form">
+                    <label for="mail">mail</label><br>
+                    <input type="email" name="mail" id="mail" required>
+                </div>
+
+                <div class="champ-form">
+                    <label for="password">mot de pass</label><br>
+                    <input type="password" name="password" id="password" required>
+                </div>
+
+                <div class="champ-form">
+                    <label for="role">role</label><br>
+                    <select name="role" id="role" required>
+                        <option value="teacher">enseignant</option>
+                        <option value="student">etudiant</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <button class="cta">Connexion</button>
+
+            <em class="forget">mot de pass oublié?</em>
+            <p>pas de compte? <a href="register.html"> &nbsp; &nbsp; &nbsp;<em>inscription</em></a></p>
+
+        </form>
+
+        <div></div>
+
+    </main>
+
+    <footer>
+        © 2025 Copyright: Hack3School.com
+    </footer>
+
+    <script src="../js/authentication/login.js"></script>
+    
+</body>
+</html>

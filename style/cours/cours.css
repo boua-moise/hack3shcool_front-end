@@ -1,0 +1,97 @@
+div.main{
+    display: flex;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    padding: 20px 0;
+    width: 700px;
+}
+
+p{
+    text-align: justify;
+}
+
+iframe{
+    height: 350px;
+    width: 700px;
+    background: #000;
+}
+
+section#output{
+    width: 700px;
+    padding: 50px 0;
+}
+
+div.image-auteur{
+    /* margin-right: 10px; */
+    height: 60px;
+    width: 60px;
+    border-right: 1px solid gray;
+    padding-right: 7px;
+}
+
+div.image-auteur img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+div.info-auteur{
+    padding-left: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+    background: rgba(0, 131, 143, 0.08);
+}
+
+h2.contrib{
+    border-bottom: 1px solid gray;
+    width: 95%;
+}
+
+div.auteur{
+    display: flex;
+    padding: 7px;
+    align-items: center;
+    width: 95%;
+}
+
+div.started{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.pass-new{
+    padding: 15px 20px;
+    margin: 20px 50px;
+}
+
+div.pass-new:hover{
+    cursor: pointer;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cta a 
+{
+    color: #fff;
+}

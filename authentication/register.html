@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack3School - Inscription</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/authentication/register.css">
+    <link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96" />
+</head>
+<body>
+    <div class="main">
+
+        <header>
+            <a href="../index.html"><div class="logo">HACK<em>3</em><br>SCHOOL</div></a>
+        </header>
+
+        <main>
+
+            <h1>Inscription</h1>
+            
+            <form action="#" method="post">
+
+                <div class="content-form">
+
+                    <div class="left-block">
+
+                        <div class="champ-form">
+                            <label for="nom">nom</label><br>
+                            <input type="text" name="nom" id="nom" required>
+                        </div>
+
+                        <div class="champ-form">
+                            <label for="mail">mail</label><br>
+                            <input type="email" name="mail" id="mail" required>
+                        </div>
+
+                        <div class="champ-form">
+                            <label for="password">mot de pass</label><br>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+
+                    </div>
+
+                    <div class="right-block">
+
+                        <div class="champ-form">
+                            <label for="prenom">prenom</label><br>
+                            <input type="text" name="prenom" id="prenom" required>
+                        </div>
+
+                        <div class="champ-form">
+                            <label for="role">role</label><br>
+                            <select name="role" id="role" required>
+                                <option value="teacher">enseignant</option>
+                                <option value="student">etudiant</option>
+                            </select>
+                        </div>
+
+                        <div class="champ-form">
+                            <label for="conf_password">confirme mot de pass</label><br>
+                            <input type="password" name="conf_password" id="conf_password" required>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="container-image">
+                    <div id="image">
+                        <div class="champ-form">
+                            <label for="profile" class="profile">photo de profile</label><br>
+                            <input type="file" name="image" id="profile" required>
+                        </div>
+
+                        <div class="champ-form">
+                            <label for="biographie">biographie</label><br>
+                            <input type="text" name="biographie" id="biographie" required>
+                        </div>
+                        
+
+                        <button type="submit" class="btn">Envoyer</button>
+                    </div>
+                </div>
+
+                <div id="cta">Inscription</div>
+                
+                <p>déjà un compte? &nbsp; &nbsp; &nbsp;<a href="login.html"><em>connexion</em></a></p>
+
+            </form>
+
+            <div></div>
+        </main>
+        <footer>
+            © 2025 Copyright: Hack3School.com
+        </footer>
+
+    </div>
+
+    <div class="loader">
+        <h1>LOADING</h1>
+    </div>
+
+    <script src="../js/authentication/register.js"></script>
+</body>
+</html>

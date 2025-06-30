@@ -1,0 +1,95 @@
+main{
+    padding: 30px;
+}
+
+a.board{
+    color: #3395a0;
+}
+
+section.items{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+}
+
+.cours{
+    height: 500px;
+    width: 365px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1.5px solid #d9d9d9;
+}
+
+div.image{
+    height: 65%;
+}
+
+div.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+h2{
+    padding-bottom: 5px;
+    border-bottom: 1px solid gray;
+}
+
+.info{
+    height: 35%;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+img.icon{
+    height: 20px;
+}
+
+div.icon{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid gray;
+}
+
+div.icon span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.icon span em{
+    margin-left: 5px;
+    font-style: normal;
+    color: #000037;
+}
+
+div.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.update, div.delete{
+    padding: 10px;
+}
+
+div.update{
+    background: #58b2e6;
+    color: #000037;
+}
+
+div.delete{
+    background: #ca0606d3;
+    color: #000037;
+}
+
+div.btn-navigate{
+    width: 50%;
+}

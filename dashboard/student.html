@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack3School - Dashboard - Student</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/dashboard/student.css">
+    <link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96" />
+</head>
+<body>
+
+    <div class="main">
+
+        <header>
+            <a href="../index.html"><div class="logo">HACK<em>3</em><br>SCHOOL</div></a>
+
+            <div class="btn-navigate" id="visiteur">
+                <a href="../index.html" class="cours-link">Accueil</a>
+                <a href="../cours/list_cours.html">Cours</a>
+                <a href="../authentication/user.html" id="user-teacher">Teacher</a>
+                <a href="../authentication/user.html" id="user-student">Student</a>
+            </div>
+
+            <div class="btn-navigate" id="teacher">
+            </div>
+
+            <div class="btn-navigate" id="student">
+                <a href="../index.html" class="cours-link">Accueil</a>
+                <a href="../cours/list_cours.html">Cours</a>
+                <a href="../authentication/user.html" id="user-teacher">Teacher</a>
+                <a href="../authentication/user.html" id="user-student">Student</a>
+                <a href="student.html" class="board">Dashboard</a>
+            </div>
+
+            <div id="auth">
+                <a class="auth-botton" href="../authentication/login.html"><div class="connexion">Connexion</div></a>
+                <a class="auth-botton" href="../authentication/register.html"><div class="cta inscription">Inscription</div></a>
+                <a href="../authentication/profile.html" class="none"><div class="user"></div></a>
+            </div>
+        </header>
+
+        <main>
+
+            <h1>Dashboard - Student</h1>
+            <h2>Encours</h2>
+            <section class="encours items">
+
+            </section>
+            <h2>Terminer</h2>
+            <section class="terminer items">
+
+            </section>
+            
+        </main>
+
+        <footer>
+            © 2025 Copyright: Hack3School.com
+        </footer>
+    </div>
+
+    <div class="loader">
+        <h1>LOADING</h1>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/dashboard/student.js"></script>
+
+</body>
+</html>

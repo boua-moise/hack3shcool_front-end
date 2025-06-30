@@ -1,0 +1,53 @@
+main{
+    padding: 50px;
+}
+
+h1{
+    margin-bottom: 50px;
+}
+
+h2.titre{
+    margin-top: 15px;
+    padding: 0 7px;
+}
+
+div.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+section.all_users{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.perso{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1.5px solid #d9d9d9;
+}
+
+.info{
+    height: 45%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.image{
+    height: 50%;
+}
+
+div.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

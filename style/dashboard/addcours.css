@@ -1,0 +1,82 @@
+main{
+    padding: 50px;
+}
+
+h1{
+    font-size: 3em;
+}
+
+div.btn-add{
+    display: flex;
+    justify-content: space-around;
+}
+
+a.add{
+    color: #3395a0;
+}
+
+div#add{
+    padding: 15px;
+    background: #3395a0;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+form{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.champ-form{
+    margin-bottom: 30px;
+}
+
+.champ-form input{
+    width: 620px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    padding-top: 15px;
+    border: none;
+    border-bottom: 1.7px solid #000;
+    color: #000037;
+    outline: none;
+    background-color: transparent;
+}
+
+.champ-form select{
+    width: 100%;
+    font-size: 1.2em;
+    margin-top: 24px;
+    border: none;
+    border-bottom: 1.7px solid #000;
+    color: #000037;
+    outline: none;
+    background-color: transparent;
+}
+
+.editor{
+    width: 600px;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+div.submit{
+    display: flex;
+    justify-content: space-around;
+}
+
+div.submit div{
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    padding: 15px;
+    background: #3395a0;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+div.block-section div.champ-form{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}

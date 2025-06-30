@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack3School - Add Cours</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/dashboard/addcours.css">
+    <link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96" />
+</head>
+<body>
+
+    <div class="main">
+
+        <header>
+            <a href="../index.html"><div class="logo">HACK<em>3</em><br>SCHOOL</div></a>
+
+            <div class="btn-navigate" id="visiteur">
+                <a href="../cours/list_cours.html" class="cours-link">Cours</a>
+                <a href="../authentication/user.html" id="user-teacher">Teacher</a>
+                <a href="../authentication/user.html" id="user-student">Student</a>
+            </div>
+
+            <div class="btn-navigate" id="teacher">
+                <a href="../index.html" class="cours-link">Accueil</a>
+                <a href="../authentication/user.html" id="user-teacher">Teacher</a>
+                <a href="../authentication/user.html" id="user-student">Student</a>
+                <a href="teacher.html">Dashboard</a>
+                <a href="addcours.html" class="add">Ajouter cours</a>
+            </div>
+
+            <div class="btn-navigate" id="student">
+            </div>
+
+            <div id="auth">
+                <a class="auth-botton" href="../authentication/login.html"><div class="connexion">Connexion</div></a>
+                <a class="auth-botton" href="../authentication/register.html"><div class="cta inscription">Inscription</div></a>
+                <a href="../authentication/profile.html" class="none"><div class="user"></div></a>
+            </div>
+        </header>
+
+        <main>
+
+            <h1>Ajout de cours</h1>
+
+            <form action="" method="post">
+
+                <div class="content-form">
+
+                    <div class="champ-form">
+                        <label for="titre">titre leçon</label><br>
+                        <input type="text" name="titre" id="titre" required>
+                    </div>
+
+                    <div class="champ-form">
+                        <label for="description">description cours</label><br>
+                        <input type="text" name="description" id="description" required>
+                    </div>
+
+                    <div class="champ-form">
+                        <label for="image">image de la leçon</label><br>
+                        <input type="file" name="image" id="image" required>
+                    </div>
+
+                    <div class="champ-form">
+                        <label for="link-video">ID de la vidéo youtube pour la presentation</label><br>
+                        <input type="text" name="url_image" id="link-video" required>
+                    </div>
+
+                    <div class="champ-form">
+                        <label for="level">niveau</label><br>
+                        <select name="niveau" id="level" required>
+                            <option value="facile">facile</option>
+                            <option value="moyenne">moyenne</option>
+                            <option value="difficile">difficile</option>
+                        </select>
+                    </div>
+
+                    <div class="champ-form">
+                        <label for="duree">duree</label><br>
+                        <input type="text" name="duree" id="duree" required>
+                    </div>
+
+                    <div class="sections-container">
+                        
+                    </div>
+
+                    <div class="submit">
+                        <div type="" id="submit-course-btn">Ajouter le cours</div>
+                    </div>
+
+                </div>
+
+            </form>
+
+            <div class="btn-add">
+                <div></div>
+                <div id="add">Ajouter une section</div>
+            </div>
+
+        </main>
+
+        <footer>
+            © 2025 Copyright: Hack3School.com
+        </footer>
+
+    </div>
+
+    <div class="loader">
+        <h1>LOADING</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/list@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/header@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/image@latest"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/dashboard/addcours.js"></script>
+</body>
+</html>

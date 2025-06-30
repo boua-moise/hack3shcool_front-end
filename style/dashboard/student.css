@@ -1,0 +1,125 @@
+main{
+    padding: 80px;
+}
+
+h1{
+    margin-bottom: 50px;
+}
+
+h2{
+    margin-top: 15px;
+    padding: 0 7px;
+    border-bottom: 1px solid gray;
+}
+
+section.items{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+}
+
+a.board{
+    color: #3395a0;
+}
+
+.cours{
+    height: 450px;
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1.5px solid #d9d9d9;
+}
+
+.cours:hover{
+    cursor: pointer;
+}
+
+div.image{
+    height: 55%;
+}
+
+div.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info{
+    height: 45%;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img.icon{
+    height: 20px;
+}
+
+div.icon{
+    padding: 0 7px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+div.icon span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.icon span em{
+    margin-left: 5px;
+    font-style: normal;
+    color: #000037;
+}
+
+div.delete{
+    padding: 10px;
+}
+
+div.delete{
+    background: #ca0606d3;
+    color: #fff;
+    position: absolute;
+    font-weight: bold;
+}
+
+div.auteur{
+    display: flex;
+    border-top: 1px solid #d9d9d9;
+    /* border-bottom: 1px solid #d9d9d9; */
+    padding: 7px;
+    align-items: center;
+}
+
+div.image-auteur{
+    /* margin-right: 10px; */
+    height: 60px;
+    width: 60px;
+    border-right: 1px solid gray;
+    padding-right: 7px;
+}
+
+div.image-auteur img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+div.info-auteur{
+    padding-left: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.encours{
+    margin-bottom: 200px;
+}
