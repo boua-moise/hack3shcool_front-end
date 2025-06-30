@@ -58,7 +58,7 @@ forme.addEventListener("submit", async (e) => {
 
     
     console.log("clen data:",Object.fromEntries(cleanForm));
-    const result = await fetch("http://localhost:8000/auth/register", {
+    const result = await fetch("http://hack3shcool.onrender.com:8000/auth/register", {
         "method":"POST",
         "body": cleanForm,
     });
