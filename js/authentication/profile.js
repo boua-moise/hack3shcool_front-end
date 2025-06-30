@@ -6,7 +6,7 @@ const biographie = document.querySelector("p.biographie");
 //localhost biographie
 //192.168.1.188
 async function getUser(token) {
-    const result = await fetch("http://localhost:8000/auth/", {
+    const result = await fetch("http://hack3shcool.onrender.com:8000/auth/", {
     "method":"GET",
     "headers":{
         "content-type": "application/json",
